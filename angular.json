@@ -43,6 +43,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref":"/socialperiodico/",
               "budgets": [
                 {
                   "type": "initial",
