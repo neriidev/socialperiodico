@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.router-outlet {
+  flex-grow: 1; /* Isto fará com que a área do conteúdo (páginas filhas) ocupe o espaço restante */
+}

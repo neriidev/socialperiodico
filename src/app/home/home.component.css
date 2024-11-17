@@ -1,0 +1,497 @@
+.conteudo {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+app-root, .sidebar-left, .content, .sidebar-right {
+  height: 100%;
+}
+.sidebar-left {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+.content {
+  width: 1101px;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+.sidebar-right {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  margin-left: auto;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.router-outlet {
+  flex-grow: 1; /* Isto fará com que a área do conteúdo (páginas filhas) ocupe o espaço restante */
+}
+
+
+/* Sidebar */
+.sidebar {
+  height: 100vh; /* 100% da altura da tela */
+  width: 341px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.email{
+  margin-left: 78px;
+}
+
+.profile {
+  text-align: center;
+  height: 152px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-info .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-info .link {
+  display: block;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.profile-info .link:hover {
+  text-decoration: underline;
+}
+
+/* Spacer de 30cm (300px) */
+.spacer {
+  margin-top: 50px; /* Definindo uma margem de 30cm (300px) */
+}
+
+/* Menu de navegação */
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+  margin-top: 19px;
+
+}
+
+.solicitacoes-amizade ul li {
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.conexoes ul li {
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.menu ul li a:hover {
+  background-color: #ddd;
+}
+
+
+
+/* Sidebar Direita */
+.sidebar-direita {
+  width: 334px; /* Largura da sidebar */
+  height: 100vh; /* 100% da altura da tela */
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  right: 0; /* Posiciona à direita da tela */
+  top: 0;
+}
+
+/* Solicitações de Amizade */
+.solicitacoes-amizade {
+  margin-bottom: 30px;
+}
+
+.solicitacoes-amizade h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.solicitacoes-amizade ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.solicitacao {
+  display: flex;
+  align-items: center;
+}
+
+.solicitacao-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.solicitacao-info {
+  flex-grow: 1;
+}
+
+.solicitacao-info .nome {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.solicitacao-info button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.solicitacao-info .confirmar {
+  background-color: #007bff;
+  color: white;
+}
+
+.solicitacao-info .delete {
+  background-color: #ccc;
+}
+
+/* Conexões */
+.conexoes {
+  margin-bottom: 30px;
+}
+
+.conexoes h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card img {
+  height: 188px;
+}
+
+.conexoes ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.conexao {
+  display: flex;
+  align-items: center;
+}
+
+.conexao-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.conexao-info {
+  flex-grow: 1;
+}
+
+.conexao-info .nome {
+  font-weight: bold;
+}
+
+.icon-envelope {
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Colabore */
+.colabore {
+  margin-bottom: 30px;
+}
+
+.colabore h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.colabore ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.colaboracao {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.colab-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.colab-info {
+  flex-grow: 1;
+}
+
+.colab-info .titulo {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.colab-info .descricao {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.link-saiba-mais {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-saiba-mais:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Container do Conteúdo Central */
+.conteudo-central {
+  padding: 20px;
+}
+
+/* Contêiner de Cards */
+.cards-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os cards */
+  /* overflow-x: auto; Permite rolar os cards horizontalmente se necessário */
+}
+
+/* Card */
+.card {
+  width: 240px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Impede que a imagem ultrapasse os limites do card */
+  background-color: #fff;
+  text-align: center;
+  flex-shrink: 0; /* Garante que os cards não encolham */
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 69%);
+  transition: box-shadow 0.3s ease; /* Transição suave na sombra */
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* A imagem ocupa todo o espaço do card sem distorcer */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+
+.post-bar button:hover {
+  background-color: #365899;
+}
+
+.post {
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 14px;
+}
+
+.post-bar {
+  width: 88%;
+  display: flex;
+  margin-left: 64px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+}
+
+.post-bar input {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  background-color: #f0f2f5;
+  margin-left: 4px;
+}
+
+
+.principal {
+  background-color: #acc7cb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 2px;
+}
+
+.btns {
+  background-color: #bbb8b85c;
+  color: acacac;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 4px;
+}
+
+/* Contêiner principal que centraliza os ícones horizontalmente */
+.conteiner-centralizado {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 100%; /* Faz com que ocupe toda a largura */
+}
+
+/* Contêiner para os ícones e links */
+.icones-links {
+  display: flex;
+  gap: 20px; /* Espaço entre os ícones */
+
+}
+
+.icones-links a{
+    margin-left: 90px;
+}
+
+/* Estilo dos links */
+.icone-link {
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-size: 24px; /* Tamanho do ícone */
+  color: #333; /* Cor do ícone */
+  transition: color 0.3s ease; /* Efeito de transição na cor */
+}
+
+/* Efeito de hover nos ícones */
+.icone-link:hover {
+  color: #007bff; /* Cor ao passar o mouse */
+}
+
+.avatar-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Personalizando a linha horizontal */
+.linha-horizontal {
+  border: none;         /* Remove a borda padrão */
+  border-top: 0.4px solid;
+   /* Espaço acima e abaixo da linha */
+   margin-top: 66px;
+}
+
+.posts{
+  width: 1000px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+
+.conexoes li:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}
+
+.solicitacoes-amizade li:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}
+
+.cards-container .card:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}
+
+.post-bar:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}
+.icones-links a:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}
+
+
+.menu li:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);    /* Leve aumento */
+}

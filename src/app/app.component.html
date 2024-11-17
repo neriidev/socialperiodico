@@ -1,0 +1,71 @@
+<main class="main">
+  <header class="header2">
+    <div class="logo2"><img src="imagens/capes.png" alt="some text" width=40 height=40> <img
+        src="imagens/govbr-logo-large.png" class="govbrlog" alt="some text"> </div>
+    <div class="title_header">Ministerio da Educação/CAPES</div>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="https://www.gov.br/pt-br/orgaos-do-governo">Órgãos do Governo</a>
+        </li>
+        <li>
+          <a href="https://www.gov.br/acessoainformacao/pt-br">Acesso à Informação</a>
+        </li>
+        <li>
+          <a href="http://www4.planalto.gov.br/legislacao">Legislação</a>
+        </li>
+        <li>
+          <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Acessibilidade</a>
+        </li>
+      </ul>
+    </div>
+    <div class="user-menu">
+      <div><img src="imagens/image.png" alt="some text">
+      </div>
+    </div>
+  </header>
+  <header class="header">
+    <div class="menus">
+      <ul>
+        <li>
+          <a href="https://www.gov.br/pt-br/orgaos-do-governo">Sobre</a>
+        </li>
+        <li>
+          <a href="https://www.gov.br/acessoainformacao/pt-br">Acervo</a>
+        </li>
+        <li>
+          <a href="http://www4.planalto.gov.br/legislacao">Treinamentos</a>
+        </li>
+        <li>
+          <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Informativos</a>
+        </li>
+        <li>
+          <img src="imagens/cafe.png" class="cafe" alt="some text">
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="content">
+    <aside class="sidebar">
+      <ul class="menu-list">
+        <li class="menu-item" (click)="onClickHome()">
+          <a routerLink="chat"><img src="imagens/icons/profile-svgrepo-com.svg" width="18px" /></a>
+        </li>
+        <li class="menu-item" (click)="onClickChat()">
+          <img src="imagens/icons/chat-conversation-svgrepo-com.svg" width="18px" />
+        </li>
+        <li class="menu-item" (click)="onClickInsights()"><img src="imagens/icons/stars-svgrepo-com.svg" width="18px" />
+        </li>
+        <li class="menu-item" (click)="onClickDescobrir()">
+          <img src="imagens/icons/global-svgrepo-com.svg" width="18px" />
+        </li>
+      </ul>
+    </aside>
+    <router-outlet />
+  </div>
+</main>
+
+
+
+
+

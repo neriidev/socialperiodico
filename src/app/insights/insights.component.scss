@@ -1,0 +1,85 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header, footer {
+  /* Ajuste de acordo com o tamanho desejado do cabeçalho e rodapé */
+  height: 50px;
+}
+
+router-outlet {
+  flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+}
+
+/* Garante que a div ocupe toda a largura e altura da tela */
+
+
+/* Contêiner principal */
+.container {
+  width: 1784px;
+  display: flex;
+  flex-direction: column; /* Organiza as divs em coluna */
+  gap: 20px; /* Espaço entre as divs */
+}
+
+.top-div{
+  width: 1900px;
+}
+
+/* Div que ocupa toda a largura */
+.top-div {
+  width: 1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ocupa toda a largura */
+}
+
+/* Contêiner para as divs do fundo */
+.bottom-container {
+  display: flex;
+  width: 100%; /* Garante que ocupe toda a largura */
+  gap: 10px; /* Espaço entre as divs do fundo */
+}
+
+/* Div que ocupa 50% da largura */
+.bottom-left,
+.bottom-right {
+  margin-left: 18px;
+
+  // color: white;
+  padding: 20px;
+  flex: 1; /* Faz com que cada uma ocupe 50% da largura */
+  text-align: center;
+}
+
+/* Estilo opcional para dar destaque */
+.bottom-left {
+  width: 892;
+
+}
+
+/* Card */
+.card {
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Impede que a imagem ultrapasse os limites do card */
+  // background-color: #fff;
+  text-align: center;
+
+  // box-shadow: 0px 4px 6px rgb(0 0 0 / 69%);
+  // transition: box-shadow 0.3s ease; /* Transição suave na sombra */
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover; /* A imagem ocupa todo o espaço do card sem distorcer */
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}

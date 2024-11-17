@@ -1,0 +1,256 @@
+::ng-deep * {
+
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+// body {
+//   margin: 0;
+//   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+//   background-color: #f0f2f5;
+//   color: #333;
+// }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color:hsl(0, 0%, 90%); */
+  background-color: #fff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.cafe {
+  width: 67px;
+  margin-right: 20px;
+}
+
+.title_header {
+  color: gray;
+  flex: auto;
+  margin-left: 10px;
+}
+
+.links {
+  flex: auto;
+  position: relative;
+}
+
+.menus {
+  flex: auto;
+  position: relative;
+}
+
+.menus ul {
+  margin-left: 581px;
+}
+
+.menus ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 82px;
+}
+
+.menus ul li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 8px;
+}
+
+.menus ul li:last-child {
+  margin-left: 30px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #1351b4;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  /* height: 30px; */
+}
+
+.logo2 {
+  /* font-size: 24px;
+    font-weight: bold; */
+  height: 30px;
+}
+
+.govbrlog {
+  /* height: 35px; */
+}
+
+.search-bar {
+  padding: 5px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  background-color: #ffffff30;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.sidebar {
+  background-color: #ededed;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #f0f2f5;
+}
+
+.feed {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.post-bar {
+  width: 80%;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+
+	flex: 1;
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.post-bar input {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  background-color: #f0f2f5;
+  margin-left: 4px;
+}
+
+.principal {
+  background-color: #acc7cb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 2px;
+}
+
+.btns {
+  background-color: #bbb8b85c;
+  color: acacac;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 4px;
+}
+
+.post-bar button:hover {
+  background-color: #365899;
+}
+
+.post {
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 14px;
+}
+
+
+app-home{
+  width: 100%;
+}
+
+.menu-list li:hover {
+  background-color: grey; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.55);    /* Leve aumento */
+}
